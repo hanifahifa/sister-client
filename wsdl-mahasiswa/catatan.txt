@@ -1,0 +1,20 @@
+Catatan untuk menjalankan program : 
+
+1) Menggunakan 
+XAMPP 5.6.40
+PHP Version 5.6.40
+
+2) Pada "D:\xampp\php\php.ini"
+// ubah
+short_open_tag=Off
+// menjadi
+short_open_tag=On
+
+// Aktifkan extension SOAP
+// Hapus semicolon pada extension SOAP
+;extension=php_soap.dll
+// menjadi
+extension=php_soap.dll
+
+3) Restart apache di XAMPP Control Panel
+4) Akses http://localhost/dashboard/phpinfo.php dan pastikan ekstensi "soap" aktif
